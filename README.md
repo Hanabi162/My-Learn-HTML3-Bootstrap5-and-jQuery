@@ -1,7 +1,7 @@
 # My Web Development Project
 
 ## Overview
-This project is an experiment to create a personal website using HTML, CSS, and Bootstrap. It consists of three distinct web pages, each designed to demonstrate various web development techniques.
+This project is an experiment to create a personal website using HTML, CSS, Bootstrap, and jQuery. It consists of three distinct web pages, each designed to demonstrate various web development techniques.
 
 ## Pages
 
