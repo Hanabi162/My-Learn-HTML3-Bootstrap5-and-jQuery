@@ -5,13 +5,13 @@ This project is an experiment to create a personal website using HTML, CSS, and 
 
 ## Pages
 
-### Tim Berners-Lee Information Page (1.html)
+### Tim Berners-Lee Information Page (tim-berners-lee.html)
 This page is dedicated to Tim Berners-Lee, the inventor of the World Wide Web. It provides an overview of his contributions to the development of the internet and the HTML language. The page is styled using Bootstrap for a responsive and modern design.
 
-### Learning Journey Page (2.html)
+### Learning Journey Page (my-learning-journey.html)
 This page outlines my learning journey in web development. It includes tables that display the number of days I spent practicing different technologies such as HTML, Bootstrap, and jQuery. The page is interactive, with Bootstrap tooltips providing additional information about each section.
 
-### jQuery Experimentation Page (3.html)
+### jQuery Experimentation Page (jquery-experiment.html)
 The third page is an interactive experiment that demonstrates various jQuery functionalities. Users can interact with different form elements like text inputs, radio buttons, checkboxes, file uploads, and more. The background and content change dynamically based on user interactions, showcasing jQuery’s capability to manipulate the DOM.
 
 ## Technologies Used
