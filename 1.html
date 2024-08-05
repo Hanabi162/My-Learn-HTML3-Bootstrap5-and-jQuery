@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ข้อมูลพื้นฐานเว็บไซต์ -->
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- viewport คือรองรับหน้าจอคอมและมือถือ-->
+    <meta name="description" content="เว็บเกี่ยวกับโปรแกรม">
+    <meta name="author" content="Anakorn">
+    <meta name="keywords" content="html">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>ข้อมูลเบื้องต้นทิมลี</title>
+    <style>
+        nav {
+            text-align: center;
+        }
+    </style>
+</head>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top fs-5" style="height: auto;">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="1.html">หน้าแรก</a>
+                </li>
+            </ul>
+                <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" style="font-size: 20px; color: rgb(177, 177, 177);">
+                    บทความอื่นๆ
+                </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item" href="2.html">การเรียนรู้ของฉัน</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="3.html">Display Jquery</a>
+                    </li>
+                </ul>
+            <ul class="nav navbar-nav">
+                <li>
+                    <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#ofcvas">ไปยังข้อมูลต่างๆ</a>
+                </li>
+            </ul>
+            <div class="offcanvas offcanvas-start bg-dark text-white" id="ofcvas" style="width: 300px;">
+                <div class="offcanvas-header">
+                    <h1>หัวข้อ</h1>
+                </div>
+                <div class="offcanvas-body">
+                    <a href="#off0" class="text-white text-decoration-none"><p>หน้าบนสุด</p></a>
+                    <a href="#off1" class="text-white text-decoration-none"><p>สารบัญสืบค้นข้อมูล</p></a>
+                    <a href="#off2" class="text-white text-decoration-none"><p>ประวัติ Dr.Banners-lee</p></a>
+                    <a href="#off3" class="text-white text-decoration-none"><p>รับชมวิดิโอการสัมภาษณ์</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<body>
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <div id="off0" class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="https://home.cern/" target="_blank"><img src="img/cern_bg_1.png" alt="cern" class="d-block img-fluid" style="width:auto;height:auto">
+                    <div class="carousel-caption" style="color:rgb(255, 255, 255)">
+                        <h3 style="font-size: 200%;">CERN</h3>
+                        <p style="font-size: 150%;">องค์การวิจัยนิวเคลียร์ยุโรป</p>
+                    </div>
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="https://www.mit.edu/" target="_blank"><img src="img/mit_bg_2.jpeg" alt="mit" class="d-block img-fluid" style="width:auto; height:auto">
+                    <div class="carousel-caption" style="color:rgb(255, 255, 255)">
+                        <h3 style="font-size: 200%;">MIT</h3>
+                        <p style="font-size: 150%;">สถาบันด้านเทคโนโลยีอันดับ 1 ของโลก</p>
+                    </div>
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="https://www.ox.ac.uk/" target="_blank"><img src="img/ox_ng_3.jpeg" alt="oxford" class="d-block img-fluid" style="width:auto; height:auto">
+                    <div class="carousel-caption" style="color:rgb(255, 255, 255)">
+                        <h3 style="font-size: 200%;">Oxford University</h3>
+                        <p style="font-size: 150%;">มหาวิทยาลัยด้านวิชาการอันดับ 1 ของโลก</p>
+                    </div>
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="https://www.southampton.ac.uk/" target="_blank"><img src="img/uos_bg_4.jpeg" alt="uos" class="d-block img-fluid" style="width:auto; height:auto; ">
+                    <div class="carousel-caption" style="color:rgb(255, 0, 0)">
+                        <h3 style="font-size: 200%;">University of Southampton</h3>
+                        <p style="font-size: 150%;">มหาวิทยาลัยสมาชิกกลุ่ม Russell Group</p>
+                    </div>
+                </a>
+            </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+    </div>
+    <header>
+        <div id="off1" class="mt-3 mb-5 text-center" style="padding-top: 20px;">
+            <h1>สารบัญสืบค้นข้อมูล</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <div id="linkinfo" class="row m-1">
+                    <div class="col-md-2">
+                            <a class="d-block" data-bs-toggle="collapse" data-bs-target="#content1"> 
+                                <button type="button" class="btn btn-dark btn-block p-3 m-1" style="width: 100%; height: 25%">World Wide Web<br>คืออะไร</button>
+                            </a>
+                            <a class="d-block" data-bs-toggle="collapse" data-bs-target="#content2">
+                                <button type="button" class="btn btn-dark btn-block p-3 m-1" style="width: 100%; height: 25%">w3c คืออะไร</button>
+                            </a>
+                            <a class="d-block" data-bs-toggle="collapse" data-bs-target="#content3"> 
+                                <button type="button" class="btn btn-dark btn-block p-3 m-1"  style="width: 100%; height: 25%">Html คืออะไร</button>
+                            </a>
+                            <a class="d-block" data-bs-toggle="collapse" data-bs-target="#content4">
+                                <button type="button" class="btn btn-dark btn-block p-3 m-1" style="width: 100%; height: 25%">ผู้ริเริ่มสิ่งเหล่านี้ คือใคร</button>
+                            </a>
+                    </div>
+                    <div class="col-md-10 d-flex p-3 border justify-content-center align-items-center">
+                            <div id="content1" class="collapse show" data-bs-parent="#linkinfo">
+                                <div>
+                                    <h3 class="text-center">Word Wide Web คืออะไร</h3>
+                                    <p class="text-center m-3">
+                                        <b>เวิลด์ไวด์เว็บ</b> คือพื้นที่ที่เก็บข้อมูลข่าวสารที่เชื่อมต่อกันทางอินเทอร์เน็ต โดยการกำหนดยูอาร์แอล 
+                                        คำว่าเวิลด์ไวด์เว็บมักจะใช้สับสนกับคำว่า อินเทอร์เน็ต จริง ๆ แล้วเวิลด์ไวด์เว็บเป็นเพียงแค่บริการหนึ่งบนอินเทอร์เน็ต
+                                        ไฮเปอร์เท็กซ์ (Hypertext) หรือข้อมูลที่มีการจัดรูปแบบบนเว็บ สามารถเรียกดูด้วยโปรแกรมที่เรียกว่า เว็บเบราว์เซอร์ ซึ่งอ่านข้อมูลที่เรียกว่าเว็บเพจมาจากเว็บเซิร์ฟเวอร์ 
+                                        ข้อมูลที่เรียกอ่านจะมาแสดงผลบนจอคอมพิวเตอร์ เพื่อให้ผู้ใช้สามารถอ่านและดูเว็บได้ เมื่อผู้ใช้ต้องการดูหน้าอื่น สามารถเลือกไฮเปอร์ลิงก์เพื่อเชื่อมโยงไปยังเว็บหน้าอื่น ๆ 
+                                        หรือทั้งยังส่งข้อมูลกลับไปที่เว็บเซิร์ฟเวอร์เพื่อประมวลผล เว็บเพจหลาย ๆ หน้าที่จัดการเก็บข้อมูลที่ใกล้เคียงกันเรียกว่าเว็บไซต์ การอ่านเว็บจากหน้าหนึ่งไปยังอีกหน้าหนึ่ง 
+                                        นิยมเรียกกันว่า "เซิร์ฟฟิงเว็บ" หรือ "บราว์ซิงเว็บ"
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="content2" class="collapse" data-bs-parent="#linkinfo">
+                                <div>
+                                    <h3 class="text-center">w3c คืออะไร</h3>
+                                    <p class="text-center mt-3">
+                                        <b>เวิลด์ไวด์เว็บคอนซอร์เทียม หรือ ดับเบิลยูทรีซี</b> คือองค์กรระหว่างประเทศที่นำโดยทิม เบอร์เนิร์ส-ลี ทำหน้าที่จัดระบบมาตรฐานที่ใช้งานบนเวิลด์ไวด์เว็บ (WWW หรือ WPC) 
+                                        โดยมีจุดมุ่งหมาย ที่จะเป็นแกนนำทางด้านพัฒนาโพรโทคอล และวิธีการใช้งานสำหรับเวิลด์ไวด์เว็บทั้งหมด นอกจากนี้ทาง WPC มีการบริการทางการศึกษา การพัฒนาซอฟต์แวร์ 
+                                        และเปิดให้ใช้ฟอรัมในการปรึกษาเกี่ยวกับเรื่องเว็บ ตามข้อมูลเมื่อ 5 มีนาคม ค.ศ. 2023 W3C มีสมาชิกองค์กร 462 องค์กร
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="content3" class="collapse" data-bs-parent="#linkinfo">
+                                <div>
+                                    <h3 class="text-center">Html คืออะไร</h3>
+                                    <p class="text-center mt-3">
+                                        <b>เอชทีเอ็มแอล</b> เป็นภาษามาร์กอัปหลักในปัจจุบันที่ใช้ในการสร้างเว็บเพจ หรือข้อมูลอื่นที่เรียกดูผ่านทางเว็บเบราว์เซอร์ ซึ่งตัวโค้ดจะแสดงโครงสร้างของข้อมูล 
+                                        ในการแสดง หัวข้อ ลิงก์ ย่อหน้า รายการ รวมถึงการสร้างแบบฟอร์ม เชื่อมโยงภาพหรือวิดีโอด้วย โครงสร้างของโค้ดเอชทีเอ็มแอลจะอยู่ในลักษณะภายในวงเล็บสามเหลี่ยม
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="content4" class="collapse" data-bs-parent="#linkinfo">
+                                <div>
+                                    <h3 class="text-center">ผู้ริเริ่มสิ่งเหล่านี้ คือใคร</h3>
+                                    <p class="text-center mt-3">
+                                        <b>เซอร์ทิโมที จอห์น เบอร์เนิร์ส-ลี</b> ผู้คิดค้นและประดิษฐ์ เวิลด์ไวด์เว็บ ผู้อำนวยการWorld Wide Web Consortium (ทำหน้าที่ดูแลการพัฒนาต่อเนื่องใหม่ ๆ เกี่ยวกับเว็บ)
+                                        นักวิจัยอาวุโสและผู้นั่งในตำแหน่ง ทรีคอมฟาวน์เดอร์สแชร์ (3Com Founders Chair)<a href="https://www.csail.mit.edu/" target="_blank"> ที่หอทดลองวิทยาศาสตร์คอมพิวเตอร์และปัญญาประดิษฐ์แห่งเอ็มไอที(CSAIL)</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+        </div>
+        <div id="off2" class="container mt-5">
+            <div class="text-center"><h3><b>ประวัติ Dr.Berners-Lee</b></h3></div>
+            <div class="card border-0">
+                <div class="card-header d-flex justify-content-center align-items-center bg-white pt-3 pb-5"><img src="img/tim.jpeg" class="rounded-circle" style="width: 20%; height: 20%" alt="Tim"></div>
+                <div  id="according" class="card-body">
+                    <p><b><u>ประวัติการศึกษา</u></b></p>
+                    <div>
+                        <div class="card mb-3">
+                            <div class="card-header">
+                                <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                                    มหาวิทยาลัยออกซฟอร์ด (OXF)
+                                </a>
+                            </div>
+                            <div id="collapseOne" class="collapse" data-bs-parent="#according">
+                                <div class="card-body">
+                                    <b>การศึกษา:</b>
+                                        <ul>
+                                            <li>ปริญญาตรีสาขาฟิสิกส์ (1973)</li>
+                                            <li>ปริญญาโทสาขาฟิสิกส์ทฤษฎี (1976)</li> 
+                                        </ul>
+                                        <b>กิจกรรมในมหาวิทยาลัย:</b>
+                                        <ul>
+                                            <li>สมาชิก Queen's College, Oxford</li>
+                                            <li>ตัวแทนแข่งขันเกมส์ "ทิดดลีวิงค์" กับมหาวิทยาลัยเคมบริดจ์</li>
+                                            <li>สร้างคอมพิวเตอร์จากอุปกรณ์ที่หาได้ในบ้าน</li>
+                                            <li>ถูกจับได้ว่าแฮ็กคอมพิวเตอร์ของมหาวิทยาลัย</li>
+                                        </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <p><b><u>ประวัติการทำงาน</u></b></p>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="btn" data-bs-toggle="collapse" href="#collapseTwo">
+                                    องค์การวิจัยนิวเคลียร์ยุโรป (CERN)
+                                </a>
+                            </div>
+                            <div id="collapseTwo" class="collapse" data-bs-parent="#according">
+                                <div class="card-body">
+                                    <b>ระยะเวลา:</b> มีนาคม 1989 - ตุลาคม 1993<br>
+                                        <b>ตำแหน่ง:</b> วิศวกรซอฟต์แวร์<br>
+                                        <b>หน้าที่ความรับผิดชอบ:</b>
+                                        <ul>
+                                            <li>พัฒนาระบบสำหรับการแบ่งปันข้อมูลระหว่างนักวิทยาศาสตร์ใน CERN</li>
+                                            <li>ออกแบบและสร้าง World Wide Web (WWW)</li>
+                                            <li>เขียนโปรแกรมเว็บเบราว์เซอร์ตัวแรกที่ชื่อว่า WorldWideWeb</li>
+                                            <li>พัฒนา Hypertext Markup Language (HTML) และ Hypertext Transfer Protocol (HTTP) ซึ่งเป็นพื้นฐานของ WWW</li>
+                                        </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="btn" data-bs-toggle="collapse" href="#collapseThree">
+                                    สถาบันเทคโนโลยีแมสซาชูเซตส์ (MIT)
+                                </a>
+                            </div>
+                            <div id="collapseThree" class="collapse" data-bs-parent="#according">
+                                <div class="card-body">
+                                    <b>ระยะเวลา:</b> กันยายน 1994 - ปัจจุบัน<br>
+                                        <b>ตำแหน่ง:</b>
+                                        <ul>
+                                            <li>Chief Scientist และ Director, World Wide Web Consortium (W3C) (1994-ปัจจุบัน)</li>
+                                            <li>Professor of Distributed Information Systems, MIT Media Lab (2004-ปัจจุบัน)</li> 
+                                            <li>Director, MIT Decentralized Information Systems Initiative (2011-ปัจจุบัน)</li>
+                                        </ul>
+                                        <b>หน้าที่ความรับผิดชอบ:</b>
+                                        <ul>
+                                            <li>ดูแล World Wide Web Consortium (W3C) ซึ่งเป็นองค์กรที่กำหนดมาตรฐานสำหรับ World Wide Web</li>
+                                            <li>ทำวิจัยเกี่ยวกับเทคโนโลยีเว็บใหม่ ๆ</li>
+                                            <li>สนับสนุนการพัฒนาเว็บที่เปิดกว้างและเข้าถึงได้</li>
+                                        </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="btn" data-bs-toggle="collapse" href="#collapseFour">
+                                    มหาวิทยาลัยเซาแธมป์ตัน (UoS)
+                                </a>
+                            </div>
+                            <div id="collapseFour" class="collapse" data-bs-parent="#according">
+                                <div class="card-body">
+                                    <b>ระยะเวลา:</b> กันยายน 1976 - มกราคม 1980<br>
+                                        <b>ตำแหน่ง:</b> วิศวกรซอฟต์แวร์
+                                        <b>หน้าที่ความรับผิดชอบ:</b>
+                                        <ul>
+                                            <li>พัฒนาซอฟต์แวร์ควบคุมระบบเครือข่าย</li>
+                                            <li>เขียนโปรแกรมสำหรับคอมพิวเตอร์ CERN</li>
+                                            <li>ทำงานเกี่ยวกับระบบไฮเปอร์เท็กซ์</li>
+                                        </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer bg-white border-0">
+                    <p><b><u>ที่มาตำแหน่ง Dr.</u></b></p>
+                        <div id="Award">
+                            <div class="card">
+                                <div class="card-header">
+                                    <a class="btn" data-bs-toggle="collapse" href="#collapselast">
+                                        ตำแหน่งทางวิชาการ
+                                    </a>
+                                </div>
+                                <div id="collapselast" class="collapse show" data-bs-parent="#Award">
+                                    <div class="card-body">
+                                        Berners-Lee ไม่ได้มีวุฒิการศึกษาปริญญาเอก แต่ได้รับ Honorary Doctorates มากกว่า 30 ฉบับจากมหาวิทยาลัยชั้นนำทั่วโลกเขามักถูกเรียกว่า Dr. Berners-Lee
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div><hr><br><br>
+        <div id="off3" class="container-fluid" align="center">
+            <iframe style="height: 450px; width: 750px;" 
+                    src="https://www.youtube.com/embed/Ay7GSLX9tHM?si=XBTIPEOOQYjs_oLQ" 
+                    title="Dr.Tim_Talk" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+            </iframe>
+          </div>
+    </main>
+    <br><br>
+</body>
+<section>
+    <footer class="text-center text-white bg-dark">
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2024 Copyright:
+      </div>
+    </footer>
+</section>
+</html>

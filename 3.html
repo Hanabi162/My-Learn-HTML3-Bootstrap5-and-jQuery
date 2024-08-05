@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ข้อมูลพื้นฐานเว็บไซต์ -->
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- viewport คือรองรับหน้าจอคอมและมือถือ-->
+    <meta name="description" content="เว็บเกี่ยวกับโปรแกรม">
+    <meta name="author" content="Anakorn">
+    <meta name="keywords" content="html">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<head>
+    <style>
+        body {
+            text-align: center;
+        }
+        input[type="file"] {
+            color: white;
+        }
+    </style>
+</head>
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+</head>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top fs-5" style="height: auto;">
+  <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link" href="1.html">หน้าแรก</a>
+              </li>
+          </ul>
+              <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" style="font-size: 20px; color: rgb(177, 177, 177);">
+                  บทความอื่นๆ
+              </button>
+              <ul class="dropdown-menu">
+                  <li>
+                      <a class="dropdown-item" href="2.html">การเรียนรู้ของฉัน</a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" href="3.html">Display Jquery</a>
+                  </li>
+              </ul>
+      </div>
+  </div>
+</nav>
+<body style="background-image: url(img/bg-Jquery_display_gif.gif);" class="text-white">
+<br>
+<h1 class="mt-5 mb-3">ตัวอย่าง Jquery การแสดงผล</h1>
+</form class="p-1">
+    <button id="radio" class="gp-btn">input:radio</button>
+    <button id="checkbox" class="gp-btn">input:checkbox</button>
+    <button id="file" class="gp-btn">input:file</button>
+    <button id="select" class="gp-btn">select</button>
+    <button id="submit" class="gp-btn">input:submit</button>
+    <button id="reset" class="gp-btn">input:reset</button>
+</form>
+<h2 class="p-1">Message = <label id="msg"></label></h2>
+<form name="testing" action="#">
+  <div class="p-1">
+	TextBox : <input type="textbox" id="textbox1" value="Anakorn"/>
+  <button id="text"  class="gp-btn">input:text</button>
+  </div>
+  <div class="p-1">
+	Password : <input type="password" value="Roumpattana" />
+  <button id="password"  class="gp-btn">input:password</button>
+  </div>
+  <div class="p-2">
+	TextArea : <br><textarea cols="30" rows="2">I'm a Programmer InternShip!</textarea>
+  <br><button id="textarea" class="gp-btn">textarea</button>
+  </div>
+  <div class="p-1">
+      Radio : <input name="sex" type="radio" value="Male" checked>Male</input>
+	            <input name="sex" type="radio" value="Female">Female</input>
+  </div>
+  <div class="p-1">
+	CheckBox : <input type="checkbox" name="checkme"></input>
+  </div>
+  <div class="p-2">
+	File : <input type="file" id="file1"></input>
+  </div>
+  <div class="p-1">
+	Hidden : <input type="hidden" value="คุณหาฉันเจอแล้ว!"></input>
+  <button id="hidden" class="gp-btn">input:hidden</button>
+  </div>
+  <div class="p-1">
+	Country : <select id="country">
+            <option value="Thailand">Thailand</option>
+			<option value="China">China</option>
+			<option value="United State">United State</option>
+		     </select>
+  </div>
+  <div class="p-2">
+	<input type="submit" value="submit"></input> 
+    <input type="reset" value="reset"></input>
+  </div>	
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#text").click(function(){
+      $(".gp-btn").css("background", "#ffffff")
+	    $('input, textarea, select').css("background", "#ffffff");
+      $('#textbox1').css("background", "#FFFF00");
+      $('#file1').css("color","#000000")
+      $('#msg').html($('#textbox1').val());
+    });
+
+    $("#password, #textarea").click(function(){
+      var str = $(this).text();
+      $(".gp-btn").css("background", "#ffffff")
+      $('input, textarea, select').css("background", "#ffffff");
+      $(str).css("background", "#FFFF00");
+      $('#file1').css("color","#000000")
+      $('#msg').html($(str).val());
+    });
+	
+    $("#radio").click(function(){
+      $(".gp-btn").css("background", "#ffffff")
+	    $('input, textarea, select').css("background", "#ffffff");
+      $(this).css("background", "#FFFF00")
+      $('#file1').css("color","#000000")
+	    $('#msg').html($('input:radio[name=sex]:checked').val());
+    });
+	
+    $("#checkbox").click(function(){
+      $(".gp-btn").css("background", "#ffffff")
+	    $('input, textarea, select').css("background", "#ffffff");
+      $(this).css("background", "#FFFF00")
+      $('#file1').css("color","#000000")
+      if($('input:checkbox[name=checkme]').is(':checked')){
+        $('#msg').html("Checkbox is checked");
+      }else{
+        $('#msg').html("Checkbox is uncheck");
+      }	  
+    });
+
+    $("#file").click(function(){
+      $(".gp-btn").css("background", "#ffffff")
+	    $('input, textarea, select').css("background", "#ffffff");
+      $(this).css("background", "#FFFF00")
+      $('#file1').css("color","#000000")
+      if($('#file1').prop('files').length > 0){
+        $('#msg').html("มีไฟล์อยู่");
+      }else{
+        $('#msg').html("ไม่มีไฟล์อยู่");
+      };
+    });
+	
+    $("#select, #hidden").click(function(){
+      var str = $(this).text();
+      $(".gp-btn").css("background", "#ffffff")
+	    $('input, textarea, select').css("background", "#ffffff");
+      $(this).css("background", "#FFFF00")
+      $('#file1').css("color","#000000")
+	    $('#msg').html($(str).val());
+    });
+	
+    $("#submit, #reset").click(function(){
+      var str = $(this).text();
+      $(".gp-btn").css("background", "#ffffff")
+	    $('input, textarea, select').css("background", "#ffffff");
+      $(this).css("background", "#FFFF00")
+      $('#file1').css("color","#000000")
+	    $('#msg').html($(str).val());
+    });
+})
+</script>
+</body>
+</html>

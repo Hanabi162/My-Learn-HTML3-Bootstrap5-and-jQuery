@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="เว็บเกี่ยวกับโปรแกรม">
+  <meta name="author" content="Anakorn">
+  <meta name="keywords" content="html">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <style>
+    nav {
+        text-align: center;
+    }
+</style>
+</head>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top fs-5" style="height: auto;">
+  <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link" href="1.html">หน้าแรก</a>
+              </li>
+          </ul>
+              <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" style="font-size: 20px; color: rgb(177, 177, 177);">
+                  บทความอื่นๆ
+              </button>
+              <ul class="dropdown-menu">
+                  <li>
+                      <a class="dropdown-item" href="2.html">การเรียนรู้ของฉัน</a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" href="3.html">Display Jquery</a>
+                  </li>
+              </ul> 
+      </div>
+  </div>
+</nav>
+<br>
+<body style="background-image: url(img/bg-Jquery_display_gif.gif);" class="text-white">
+  <h1 class="mt-5 mb-3">การเรียนรู้ของฉัน</h1>
+  <article>
+    <div class="flex-container">
+      <div class="d-flex">
+        <div class="col-md-6">
+          <div class="d-grid grid-template-columns: repeat(2, 1fr)">
+            <table class="table table-bordered text-white table-dark table-striped" data-bs-toggle="tooltip" data-bs-placement="top" title="Html">
+              <thead>
+                <th>ฝึกฝน Html วัน</th>
+                <th>ฝึกฝน Html จำนวนวัน</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>จันทร์</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>อังคาร</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>วันพุธ</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td colspan="2">จำนวนวันที่เรียนรู้ไปทั้งหมด : 3 วัน</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="table table-bordered text-white table-dark table-striped" data-bs-toggle="tooltip" data-bs-placement="top" title="Bootstrap">
+              <thead>
+                <th>ฝึกฝน Bootstrap วัน</th>
+                <th>ฝึกฝน Bootstrap จำนวนวัน</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>พฤหัสบดี</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>ศุกร์</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>จันทร์</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td colspan="2">จำนวนวันที่เรียนรู้ไปทั้งหมด : 3 วัน</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="table table-bordered text-white table-dark table-striped" data-bs-toggle="tooltip" data-bs-placement="top" title="jQuery">
+              <thead>
+                <th>ฝึกฝน jQuery วัน</th>
+                <th>ฝึกฝน jQuery จำนวนวัน</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>อังคาร</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>พุธ</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td colspan="2">จำนวนวันที่เรียนรู้ไปทั้งหมด : 2 วัน</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+    </div>
+    </div>
+  </article>
+</body>
+</html>
